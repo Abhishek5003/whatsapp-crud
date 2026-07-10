@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Post</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>New Post......</h1>
+    <form action="/newPost" method="post">
+      <label for="from">From :</label><br />
+      <input type="text" name="from" id="from" /><br /><br />
+      <label for="to">TO :</label><br />
+      <input type="text" name="to" id="to" /><br /><br />
+      <label for="msg">Message :</label><br />
+      <textarea name="msg" id="msg" rows="3" cols="20"></textarea>
+      <br /><br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

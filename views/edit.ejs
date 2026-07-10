@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Edit your message .............</h1>
+    <p>Your Message ID is <%= id %></p>
+    <form action="/edit/<%= id %>" method="post">
+      <label for="msg">Enter Your New Message :</label> &nbsp;
+      <input type="text" name="msg" id="msg" /><br /><br />
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>

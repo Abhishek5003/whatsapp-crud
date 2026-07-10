@@ -1,0 +1,27 @@
+body {
+  background-color: rgb(255, 226, 168);
+}
+
+.chatbox {
+  border: 2px solid black;
+  margin: 10px 0 5px 0;
+  padding: 0px 10px 0 10px;
+  font-size: 20px;
+  display: inline-block;
+  background-color: rgb(206, 232, 255);
+  border-radius: 20px;
+}
+
+.msgbox {
+  background-color: rgb(116, 218, 255);
+  color: white;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#newPostbtn {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

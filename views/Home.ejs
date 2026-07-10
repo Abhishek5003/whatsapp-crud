@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Chats</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>All Chats Are Here.........</h1>
+    <button id="newPostbtn"><a href="http://localhost:8080/newPost">New Post</a></button>
+    <% for (const talk of talks) { %>
+        <div class="chatbox">
+            <p>From : <%= talk["from"] %></p>
+            <p>Received by : <%= talk["to"] %></p>
+            <p class="msgbox">Message : <%= talk["msg"] %></p>
+            <hr>
+            <p>Date/Time : <%= talk["created_at"] %></p>
+            <hr>
+            <button><a href="http://localhost:8080/edit/<%= talk["id"] %>">Edit</a></button> &nbsp;&nbsp;
+            <button><a href="http://localhost:8080/delete/<%= talk["id"] %>">Delete</a></button><br><br>
+            
+        </div>
+        <br>
+    <% } %>
+</body>
+</html>
